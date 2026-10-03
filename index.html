@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мирный Договор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Экран 1: Ввод никнейма -->
+  <div class="card" id="step-name">
+    <h1>Введи свой никнейм</h1>
+    <p class="subtitle">(Максимум 5 символов! Все лишние буквы летят в мусорку)</p>
+
+    <div class="input-wrapper">
+      <input type="text" id="username" placeholder="Имя..." autocomplete="off">
+      <div id="trash-bin" class="trash-bin">🗑️</div>
+    </div>
+
+    <button id="btn-next-step" class="btn btn-primary" disabled>Далее ➔</button>
+  </div>
+<!-- Экран 2: Вопросы с встроенной картинкой миньона -->
+  <div class="card hidden" id="step-questions">
+  
+    <h1 id="question-text">Текст вопроса появится здесь</h1>
+
+    <div class="buttons-wrapper">
+      <button id="btn-yes" class="btn btn-yes">Да!</button>
+      <button id="btn-no" class="btn btn-no">Нет</button>
+    </div>
+  </div>
+
+  <!-- Экран 3: Финал -->
+  <div class="card hidden" id="step-final">
+    <h1 class="final-title">ВЫ ПРОШЛИ ПРОВЕРКУ УСПЕШНО! 🎉</h1>
+    <p class="final-subtitle">Вкусность сладость и подойдико мне уже наконец</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
